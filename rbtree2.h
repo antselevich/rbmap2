@@ -149,12 +149,12 @@ template<class tree>
 		}
 
 		reference operator*() const
-		{ // WHY???
+		{
 			return ((reference)**(base_iterator *)this);
 		}
 
 		pointer operator->() const
-		{ // WHY???
+		{
 			return (&**this);
 		}
 
@@ -464,7 +464,7 @@ template<class rbTraits>
 			{
 				clear();
 				this->_Swap_all(right);
-				_Swap_adl(this->comp, right.comp); // Why?
+				_Swap_adl(this->comp, right.comp);
 				std::swap(this->head, right.head);
 				std::swap(this->my_size, right.my_size);
 			}

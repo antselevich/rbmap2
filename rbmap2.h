@@ -64,7 +64,6 @@ template <
 			return (value.first);
 		}
 
-		/* TODO Why not key_compare */
 		comparator comp;
 
 	};
